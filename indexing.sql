@@ -50,3 +50,13 @@ WHERE year = 2010;
 
 CREATE INDEX
 ON car_models (make_code, make_title, year);
+
+-- Create a query to get a list of all `make_title` values from the `car_models` table where the `make_code` is `'LAM'`, without any duplicate rows, and note the time somewhere. (should have 1 result)
+
+SELECT DISTINCT make_title FROM car_models
+WHERE make_code = 'LAM';
+
+-- Create a query to list all `model_title` values where the `make_code` is `'NISSAN'`, and the `model_code` is `'GT-R'` without any duplicate rows, and note the time somewhere. (should have 1 result)
+
+SELECT DISTINCT model_title FROM car_models
+WHERE make_code = 'NISSAN' AND model_code = 'GT-R';
