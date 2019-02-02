@@ -76,3 +76,9 @@ WHERE year between 2010 AND 2015;
 
 SELECT * FROM car_models
 WHERE year = 2010;
+
+DROP DATABASE IF EXISTS indexed_cars;
+DROP user IF EXISTS indexed_cars_user;
+
+-- ran the scripts already?
+-- should the drop...if exists be at the top of my file?
