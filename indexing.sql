@@ -44,3 +44,9 @@ WHERE year between 2010 AND 2015;
 
 SELECT * FROM car_models
 WHERE year = 2010;
+
+-- CREATE INDEX [index name]
+-- ON [table name] ([col 1, col 2, ...rest]);
+
+CREATE INDEX
+ON car_models (make_code, make_title, year);
